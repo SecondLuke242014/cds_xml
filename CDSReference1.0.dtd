@@ -1,0 +1,22 @@
+<!--
+Copyright Luke242014 2022-2024
+All Rights Reserved
+Filetype: *.cdsref
+-->
+
+<!-- Entities -->
+<!ENTITY % ReferenceObject (array|item|dictionary|key|value)>
+<!ENTITY % boolean (yes|no)>
+
+<!-- array -->
+<!ELEMENT array (item)>
+<!ELEMENT item (#PCDATA)>
+
+<!-- dictionary -->
+<!ELEMENT dictionary (key,value)>
+<!ELEMENT key (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+
+<!-- boolean --> 
+<!ELEMENT yes EMPTY> <!-- true -->
+<!ELEMENT no EMPTY> <!-- false -->
