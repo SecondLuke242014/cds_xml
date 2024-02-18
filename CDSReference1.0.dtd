@@ -5,7 +5,7 @@ Filetype: *.cdsref
 -->
 
 <!-- Entities -->
-<!ENTITY % ReferenceObject (array|item|dictionary|key|value)>
+<!ELEMENT cdsref (array|item|dictionary|key|value)>
 <!ENTITY % boolean (yes|no)>
 
 <!-- array -->
@@ -20,3 +20,6 @@ Filetype: *.cdsref
 <!-- boolean --> 
 <!ELEMENT yes EMPTY> <!-- true -->
 <!ELEMENT no EMPTY> <!-- false -->
+
+<!-- Miscellaneous -->
+<!ATTLIST cdsref version "1.0"> <!-- do not change the version, every other CDSREF version -->
