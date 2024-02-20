@@ -4,15 +4,11 @@
   <xs:element name="cdlist">
     <xs:attribute name="version" type="xs:string" default="1.0"/>
     <xs:element name="list">
-      <xs:sequence>
-        <xs:element name="item" type="xs:string"/>
-      </xs:sequence>
+      <xs:element name="item" type="xs:string"/>
     </xs:element>
   </xs:element>
   <xs:element name="dict">
-    <xs:sequence>
-      <xs:element name="key" type="xs:string"/>
-      <xs:element name="value" type="xs:string"/>
-    </xs:sequence>
+    <xs:element name="key" type="xs:string"/>
+    <xs:element name="value" type="xs:string"/>
   </xs:element> 
 </xs:schema>
