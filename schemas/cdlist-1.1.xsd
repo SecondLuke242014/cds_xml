@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cdlist">
+    <xs:attribute name="version" type="xs:string" default="1.0"/>
+    <xs:element name="list">
+      <xs:element name="item" type="xs:string"/>
+    </xs:element>
+  </xs:element>
+  <xs:element name="dict">
+    <xs:element name="key" type="xs:string"/>
+    <xs:element name="value" type="xs:string"/>
+    <xs:element name="yes">
+      <xs:complexType/>
+    </xs:element>
+    <xs:element name="no">
+      <xs:complexType/>
+    </xs:element>
+  </xs:element> 
+</xs:schema>
